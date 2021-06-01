@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="246.855" height="48.149" viewBox="0 0 246.855 48.149">
+  <g id="Museum" transform="translate(-25.333 -25.333)">
+    <g id="Icon_ionic-ios-information-circle-outline" data-name="Icon ionic-ios-information-circle-outline" transform="translate(243.625 33.625)">
+      <path id="Trazado_72" data-name="Trazado 72" d="M16.552,11.913a1.248,1.248,0,1,1,1.241,1.211A1.212,1.212,0,0,1,16.552,11.913Zm.085,2.162h2.313V22.8H16.636Z" transform="translate(-1.83 -1.018)" fill="#fffaf3"/>
+      <path id="Trazado_73" data-name="Trazado 73" d="M15.969,5.07A10.894,10.894,0,1,1,8.261,8.261,10.827,10.827,0,0,1,15.969,5.07m0-1.7A12.594,12.594,0,1,0,28.563,15.969,12.592,12.592,0,0,0,15.969,3.375Z" fill="#fffaf3"/>
+    </g>
+    <rect id="Rectángulo_5" data-name="Rectángulo 5" width="200" height="38" rx="1" transform="translate(30 30)" fill="#fff"/>
+    <path id="path16" d="M889.877-951.785v20.839l8.346,8.346v-37.53h-37.53l8.346,8.346Z" transform="translate(-725.699 -825.407) rotate(90)" fill="none" stroke="#f19e10" stroke-miterlimit="10" stroke-width="1.333"/>
+    <path id="path16-2" data-name="path16" d="M889.877-951.785v20.839l8.346,8.346v-37.53h-37.53l8.346,8.346Z" transform="translate(986.131 924.223) rotate(-90)" fill="#f19e10" stroke="#f19e10" stroke-miterlimit="10" stroke-width="1.333"/>
+  </g>
+</svg>
