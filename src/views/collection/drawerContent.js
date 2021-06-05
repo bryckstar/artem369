@@ -6,7 +6,7 @@ import {DrawerStyles} from './styles';
 
 export function DrawerContent(props) {
   return (
-    <DrawerContentScrollView style={{padding: 10, backgroundColor: 'black'}}>
+    <DrawerContentScrollView  style={{padding: 10, backgroundColor: 'black'}}>
       <Text h3 style={DrawerStyles.textTittle}>
         Tu colección
       </Text>
