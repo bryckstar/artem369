@@ -7,6 +7,7 @@ import AutoHeightImage from 'react-native-auto-height-image';
 import {Icon} from 'react-native-elements';
 import {TouchableOpacity} from 'react-native';
 import {ScrollView} from 'react-native';
+import {TouchableHighlight} from 'react-native-gesture-handler';
 const Drawer = createDrawerNavigator();
 
 function Obras({navigation}) {
@@ -52,13 +53,18 @@ function Obras({navigation}) {
             marginLeft: '1%',
           }}>
           <View style={{width: '40%', marginTop: '5%'}}>
-            <AutoHeightImage
-              width={200}
-              style={{borderColor: '#B8874A', borderWidth: 5}}
-              source={{
-                uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
-              }}
-            />
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('IndCol');
+              }}>
+              <AutoHeightImage
+                width={200}
+                style={{borderColor: '#B8874A', borderWidth: 5}}
+                source={{
+                  uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
+                }}
+              />
+            </TouchableOpacity>
           </View>
           <View style={{width: '40%', marginTop: '5%'}}>
             <AutoHeightImage
