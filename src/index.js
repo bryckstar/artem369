@@ -18,7 +18,7 @@ const App = () => (
         options={{headerShown: false}}
       />
       <Stack.Screen name="Map" component={Map} />
-      <Stack.Screen name="Collection" component={Collection} />
+      <Stack.Screen name="Collection" component={Collection} options={{headerShown:false}} />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Configuration" component={Profile} />
       <Stack.Screen name="Quiz" component={Quiz} />
