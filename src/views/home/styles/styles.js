@@ -4,10 +4,12 @@ export const HomeStyles = StyleSheet.create({
   confIconsWrapper: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     marginTop: 'auto',
     padding: 20,
-    width: '22%',
-    justifyContent: 'space-around',
+  },
+  colletionsBook:{
+    marginLeft: 'auto'
   },
   backgroudImage: {
     width: '100%',

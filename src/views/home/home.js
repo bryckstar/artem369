@@ -1,5 +1,5 @@
 import React from 'react';
-import {Avatar} from 'react-native-elements';
+import {Avatar, Image, Icon} from 'react-native-elements';
 import {Button, ImageBackground, Modal, Text, View} from 'react-native';
 import SeetingsIcon from '../../assets/icons/settings.svg';
 import MusicIcon from '../../assets/icons/music.svg';
@@ -33,7 +33,7 @@ export const Home = ({navigation}) => {
             marginRight: 'auto',
             borderRadius: 10,
           }}>
-          <Text>Editar Nombre</Text>
+          <Text style="black">Editar Nombre</Text>
           <Input
             defaultValue={museumName}
             onChangeText={e => {
@@ -96,33 +96,47 @@ export const Home = ({navigation}) => {
           />
         </View>
       </View>
-
       <View style={HomeStyles.backgroudImage}>
         <BackGround width={'100%'} height={'100%'} />
       </View>
       <View style={{...HomeStyles.confIconsWrapper, zIndex: 9}}>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('Configuration');
-          }}>
+        <View style={{flexDirection: 'row',}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Configuration');
+            }}>
+            <View>
+              <SeetingsIcon width={30} height={30} />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Configuration');
+            }}>
+            <View>
+              <MusicIcon width={30} height={30} />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Configuration');
+            }}>
+            <View>
+              <BellIcon width={30} height={30} />
+            </View>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity onPress={() => {
+              navigation.navigate('Collection');
+            }}>
           <View>
-            <SeetingsIcon width={30} height={30} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('Configuration');
-          }}>
-          <View>
-            <MusicIcon width={30} height={30} />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('Configuration');
-          }}>
-          <View>
-            <BellIcon width={30} height={30} />
+            <Image
+              source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
+              style={{
+                width: 40,
+                height: 40,
+              }}
+            />
           </View>
         </TouchableOpacity>
       </View>
