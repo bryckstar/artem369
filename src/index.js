@@ -8,6 +8,7 @@ import {Collection} from './views/collection/collection';
 import {Profile} from './views/profile/profile';
 import {Quiz} from './views/quiz/quiz';
 import {IndividualCollection} from './views/collection/individual-collection';
+import {Room} from './views/rooms/room';
 const Stack = createStackNavigator();
 const App = () => (
   <NavigationContainer>
@@ -32,6 +33,11 @@ const App = () => (
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Configuration" component={Profile} />
       <Stack.Screen name="Quiz" component={Quiz} />
+      <Stack.Screen
+        name="Room"
+        options={{headerShown: false}}
+        component={Room}
+      />
     </Stack.Navigator>
   </NavigationContainer>
 );

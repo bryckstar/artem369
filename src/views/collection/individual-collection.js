@@ -4,18 +4,41 @@ import {Text} from 'react-native';
 import {View} from 'react-native';
 import AutoHeightImage from 'react-native-auto-height-image';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-
-export const IndividualCollection = () => {
+import {Icon} from 'react-native-elements';
+export const IndividualCollection = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <View>
-        <AutoHeightImage
-          width={300}
-          style={{borderColor: '#B8874A', borderWidth: 5}}
-          source={{
-            uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
-          }}
-        />
+      {/*  */}
+
+      <View style={styles.imageContainer}>
+        <View style={{marginLeft: 7}}>
+          <Icon
+            name="chevron-left"
+            onPress={() => {
+              navigation.goBack();
+            }}
+            type="font-awesome-5"
+          />
+        </View>
+
+        <View style={styles.imageWrapper}>
+          <AutoHeightImage
+            width={250}
+            style={{
+              borderColor: '#B8874A',
+              borderWidth: 5,
+            }}
+            source={{
+              uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
+            }}
+          />
+        </View>
+
+        <View>
+          <Icon style={styles.icons} name="heart" type="font-awesome-5" />
+          <Icon style={styles.icons} name="share-alt" type="font-awesome-5" />
+          <Icon style={styles.icons} name="bars" type="font-awesome-5" />
+        </View>
       </View>
       <View style={styles.information}>
         <Text style={styles.title}>La Noche estrellada</Text>
@@ -73,4 +96,16 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   buttonText: {color: 'white', fontWeight: '900'},
+  imageContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  imageWrapper: {
+    alignSelf: 'center',
+    marginRight: 15,
+  },
+  icons: {
+    marginTop: '40%',
+  },
 });

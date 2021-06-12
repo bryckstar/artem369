@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export const HomeStyles = StyleSheet.create({
+export const RoomStyles = StyleSheet.create({
   confIconsWrapper: {
     display: 'flex',
     flexDirection: 'row',
@@ -16,18 +16,15 @@ export const HomeStyles = StyleSheet.create({
     height: '100%',
     position: 'absolute',
     zIndex: -1,
-    backgroundColor: '#FFCBA8',
+    backgroundColor: '#9B7042',
   },
-  cardsWrapper: {
-    width: '70%',
-    height:'60%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: 'auto',
-    marginBottom: 'auto',
+  contentContainer: {
     display: 'flex',
     flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent:'center'
+    alignItems: 'center',
+    height: '100%',
+    width: '100%',
+    justifyContent: 'space-between',
+    padding:15
   },
 });

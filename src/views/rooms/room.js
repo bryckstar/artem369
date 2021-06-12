@@ -1,20 +1,23 @@
-import React from 'react';
-import {Avatar, Image, Icon} from 'react-native-elements';
-import {Button, ImageBackground, Modal, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {
+  Modal,
+  Text,
+  View,
+  Input,
+  Button,
+  TouchableOpacity,
+  Image,
+} from 'react-native';
 import SeetingsIcon from '../../assets/icons/settings.svg';
 import MusicIcon from '../../assets/icons/music.svg';
 import BellIcon from '../../assets/icons/bell.svg';
-import BackGround from '../../assets/media/background.svg';
 import MuseumTitle from '../../assets/media/museumTittle.svg';
-import {HomeStyles} from './styles/styles';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {useState} from 'react';
-import {Input} from 'react-native-elements/dist/input/Input';
-import { RoomCard } from '../../components/home-components/rom-card';
-
-export const Home = ({navigation}) => {
+import {RoomStyles} from './styles/room-styles';
+import {Avatar, Icon} from 'react-native-elements';
+export const Room = ({route, navigation}) => {
   const [museumName, setMuseumName] = useState('Museo Name');
   const [modalVisible, setModalVisible] = useState(false);
+  const {id, total} = route.params;
   return (
     <View style={{height: '100%'}}>
       <Modal
@@ -97,15 +100,39 @@ export const Home = ({navigation}) => {
           />
         </View>
       </View>
-      <View style={HomeStyles.backgroudImage}>
-       <View style={HomeStyles.cardsWrapper}>
-            {[1,2,3,4].map((index)=>(
-              <RoomCard key={index} navigation={navigation} index={index} total={4}/>
-            ))}
-       </View>
+      <View style={RoomStyles.backgroudImage}>
+        <View style={RoomStyles.contentContainer}>
+          <Icon
+            name="chevron-left"
+            color="white"
+            size={50}
+            type="font-awesome-5"
+            onPress={() => {
+              if (id === 1) {
+                return;
+              } else {
+                navigation.navigate('Room', {id: id - 1});
+              }
+            }}
+          />
+          <Text style={{color: 'white', fontSize: 35}}>{id}</Text>
+          <Icon
+            name="chevron-right"
+            color="white"
+            size={50}
+            type="font-awesome-5"
+            onPress={() => {
+              if (id === total) {
+                return;
+              } else {
+                navigation.navigate('Room', {id: id + 1});
+              }
+            }}
+          />
+        </View>
       </View>
-      <View style={{...HomeStyles.confIconsWrapper, zIndex: 9}}>
-        <View style={{flexDirection: 'row',}}>
+      <View style={{...RoomStyles.confIconsWrapper, zIndex: 9}}>
+        <View style={{flexDirection: 'row'}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('Configuration');
@@ -131,10 +158,12 @@ export const Home = ({navigation}) => {
             </View>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => {
-              navigation.navigate('Collection');
-            }}>
-          <View style={{backgroundColor:'white', padding:10, borderRadius:100}}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Collection');
+          }}>
+          <View
+            style={{backgroundColor: 'white', padding: 10, borderRadius: 100}}>
             <Image
               source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
               style={{
