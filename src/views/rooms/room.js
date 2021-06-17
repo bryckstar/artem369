@@ -158,21 +158,41 @@ export const Room = ({route, navigation}) => {
             </View>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity
-          onPress={() => {
-            navigation.navigate('Collection');
-          }}>
-          <View
-            style={{backgroundColor: 'white', padding: 10, borderRadius: 100}}>
-            <Image
-              source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
+        <View style={{flexDirection: 'row'}}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Collection');
+            }}>
+            <View
               style={{
-                width: 40,
-                height: 40,
-              }}
-            />
-          </View>
-        </TouchableOpacity>
+                backgroundColor: 'white',
+                padding: 10,
+                borderRadius: 100,
+              }}>
+              <Image
+                source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
+                style={{width: 40, height: 40}}
+              />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Map');
+            }}>
+            <View
+              style={{
+                backgroundColor: 'white',
+                padding: 10,
+                borderRadius: 100,
+                marginLeft: 10,
+              }}>
+              <Image
+                source={{uri: 'https://i.imgur.com/4lZmHNg.png'}}
+                style={{width: 40, height: 40}}
+              />
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

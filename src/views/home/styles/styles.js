@@ -20,7 +20,7 @@ export const HomeStyles = StyleSheet.create({
   },
   cardsWrapper: {
     width: '70%',
-    height:'60%',
+    height: '60%',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: 'auto',
@@ -28,6 +28,6 @@ export const HomeStyles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent:'center'
+    justifyContent: 'center',
   },
 });

@@ -10,7 +10,7 @@ import {HomeStyles} from './styles/styles';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import {useState} from 'react';
 import {Input} from 'react-native-elements/dist/input/Input';
-import { RoomCard } from '../../components/home-components/rom-card';
+import {RoomCard} from '../../components/home-components/rom-card';
 
 export const Home = ({navigation}) => {
   const [museumName, setMuseumName] = useState('Museo Name');
@@ -98,14 +98,19 @@ export const Home = ({navigation}) => {
         </View>
       </View>
       <View style={HomeStyles.backgroudImage}>
-       <View style={HomeStyles.cardsWrapper}>
-            {[1,2,3,4].map((index)=>(
-              <RoomCard key={index} navigation={navigation} index={index} total={4}/>
-            ))}
-       </View>
+        <View style={HomeStyles.cardsWrapper}>
+          {[1, 2, 3, 4].map(index => (
+            <RoomCard
+              key={index}
+              navigation={navigation}
+              index={index}
+              total={4}
+            />
+          ))}
+        </View>
       </View>
       <View style={{...HomeStyles.confIconsWrapper, zIndex: 9}}>
-        <View style={{flexDirection: 'row',}}>
+        <View style={{flexDirection: 'row', marginTop: 25}}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('Configuration');
@@ -131,19 +136,41 @@ export const Home = ({navigation}) => {
             </View>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => {
+        <View style={{flexDirection: 'row'}}>
+          <TouchableOpacity
+            onPress={() => {
               navigation.navigate('Collection');
             }}>
-          <View style={{backgroundColor:'white', padding:10, borderRadius:100}}>
-            <Image
-              source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
+            <View
               style={{
-                width: 40,
-                height: 40,
-              }}
-            />
-          </View>
-        </TouchableOpacity>
+                backgroundColor: 'white',
+                padding: 10,
+                borderRadius: 100,
+              }}>
+              <Image
+                source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
+                style={{width: 40, height: 40}}
+              />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate('Map');
+            }}>
+            <View
+              style={{
+                backgroundColor: 'white',
+                padding: 10,
+                borderRadius: 100,
+                marginLeft: 10,
+              }}>
+              <Image
+                source={{uri: 'https://i.imgur.com/4lZmHNg.png'}}
+                style={{width: 40, height: 40}}
+              />
+            </View>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

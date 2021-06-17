@@ -1,6 +1,10 @@
-import React from 'react'
-import { Text, View } from 'react-native'
+import React from 'react';
+import {Text, View} from 'react-native';
 
 export const Map = () => {
-    return(<View><Text>Map</Text></View>)
-}
+  return (
+    <View>
+      <Text>Map</Text>
+    </View>
+  );
+};
