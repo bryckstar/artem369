@@ -12,6 +12,9 @@ import SeetingsIcon from '../../assets/icons/settings.svg';
 import MusicIcon from '../../assets/icons/music.svg';
 import BellIcon from '../../assets/icons/bell.svg';
 import MuseumTitle from '../../assets/media/museumTittle.svg';
+import MapL1 from '../../assets/maps/mapL1.svg';
+import MapL2 from '../../assets/maps/mapL2.svg';
+import Desc from '../../assets/maps/description.svg';
 import {MapStyles} from './styles/map-styles';
 import {Avatar, Icon} from 'react-native-elements';
 export const Map = ({navigation}) => {
@@ -99,33 +102,43 @@ export const Map = ({navigation}) => {
           />
         </View>
       </View>
-      <View style={MapStyles.backgroudImage}></View>
+      <View style={MapStyles.backgroudImage}>
+        <Icon
+          name="chevron-left"
+          color="white"
+          size={50}
+          type="font-awesome-5"
+        />
+        <View
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            width: '80%',
+            height: '60%',
+            alignItems: 'center',
+            marginTop: '15%',
+          }}>
+          <MapL1 />
+          <View style={{alignSelf: 'flex-start'}}>
+            <MapL2 />
+          </View>
+          <MapL1 />
+          <View style={{alignSelf: 'flex-start'}}>
+            <MapL2 />
+          </View>
+        </View>
+        <Icon
+          name="chevron-right"
+          color="white"
+          size={50}
+          type="font-awesome-5"
+        />
+      </View>
+
       <View style={{...MapStyles.confIconsWrapper, zIndex: 9}}>
         <View style={{flexDirection: 'row'}}>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Configuration');
-            }}>
-            <View>
-              <SeetingsIcon width={30} height={30} />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Configuration');
-            }}>
-            <View>
-              <MusicIcon width={30} height={30} />
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Configuration');
-            }}>
-            <View>
-              <BellIcon width={30} height={30} />
-            </View>
-          </TouchableOpacity>
+          <Desc />
         </View>
         <View style={{flexDirection: 'row'}}>
           <TouchableOpacity

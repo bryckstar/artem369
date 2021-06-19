@@ -17,6 +17,12 @@ export const MapStyles = StyleSheet.create({
     position: 'absolute',
     zIndex: -1,
     backgroundColor: '#9B7042',
+    display:'flex',
+    flexDirection:'row',
+    justifyContent:'space-around',
+    alignItems:'center',
+    paddingRight:50,
+    paddingLeft:50
   },
   contentContainer: {
     display: 'flex',
