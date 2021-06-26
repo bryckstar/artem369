@@ -119,7 +119,13 @@ export const Map = ({navigation}) => {
             alignItems: 'center',
             marginTop: '15%',
           }}>
-          <MapL1 />
+          <TouchableOpacity>
+            <MapL1
+              onPress={() => {
+                navigation.navigate('Quiz');
+              }}
+            />
+          </TouchableOpacity>
           <View style={{alignSelf: 'flex-start'}}>
             <MapL2 />
           </View>
