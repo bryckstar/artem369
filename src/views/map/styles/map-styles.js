@@ -11,6 +11,11 @@ export const MapStyles = StyleSheet.create({
   colletionsBook: {
     marginLeft: 'auto',
   },
+  backgroudMap: {
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+  },
   backgroudImage: {
     width: '100%',
     height: '100%',

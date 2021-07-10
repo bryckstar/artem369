@@ -12,6 +12,7 @@ import SeetingsIcon from '../../assets/icons/settings.svg';
 import MusicIcon from '../../assets/icons/music.svg';
 import BellIcon from '../../assets/icons/bell.svg';
 import MuseumTitle from '../../assets/media/museumTittle.svg';
+import Background from '../../assets/maps/mapa_2.svg';
 import MapL1 from '../../assets/maps/mapL1.svg';
 import MapL2 from '../../assets/maps/mapL2.svg';
 import Desc from '../../assets/maps/description.svg';
@@ -77,7 +78,13 @@ export const Map = ({navigation}) => {
           width: '100%',
         }}>
         <View style={{padding: 10}}>
-          <Text style={{zIndex: 1, paddingTop: 15, paddingLeft: 30}}>
+          <Text
+            style={{
+              zIndex: 1,
+              paddingTop: 15,
+              paddingLeft: 30,
+              color: '#2596be',
+            }}>
             {museumName}
           </Text>
           <View style={{position: 'absolute', padding: 10}}>
@@ -102,6 +109,7 @@ export const Map = ({navigation}) => {
           />
         </View>
       </View>
+
       <View style={MapStyles.backgroudImage}>
         <Icon
           name="chevron-left"
@@ -144,7 +152,10 @@ export const Map = ({navigation}) => {
 
       <View style={{...MapStyles.confIconsWrapper, zIndex: 9}}>
         <View style={{flexDirection: 'row'}}>
-          <Desc />
+          <Image
+            source={require('../../assets/images/missions2.jpeg')} //'../../assets/images/missions.jpeg'}}
+            style={{width: 200, height: 30, marginTop: 25}}
+          />
         </View>
         <View style={{flexDirection: 'row'}}>
           <TouchableOpacity
@@ -153,7 +164,6 @@ export const Map = ({navigation}) => {
             }}>
             <View
               style={{
-                backgroundColor: 'white',
                 padding: 10,
                 borderRadius: 100,
               }}>
@@ -169,7 +179,6 @@ export const Map = ({navigation}) => {
             }}>
             <View
               style={{
-                backgroundColor: 'white',
                 padding: 10,
                 borderRadius: 100,
                 marginLeft: 10,

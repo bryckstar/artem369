@@ -75,7 +75,13 @@ export const Room = ({route, navigation}) => {
           width: '100%',
         }}>
         <View style={{padding: 10}}>
-          <Text style={{zIndex: 1, paddingTop: 15, paddingLeft: 30}}>
+          <Text
+            style={{
+              zIndex: 1,
+              paddingTop: 15,
+              paddingLeft: 30,
+              color: '#2596be',
+            }}>
             {museumName}
           </Text>
           <View style={{position: 'absolute', padding: 10}}>
@@ -165,7 +171,6 @@ export const Room = ({route, navigation}) => {
             }}>
             <View
               style={{
-                backgroundColor: 'white',
                 padding: 10,
                 borderRadius: 100,
               }}>
@@ -181,7 +186,6 @@ export const Room = ({route, navigation}) => {
             }}>
             <View
               style={{
-                backgroundColor: 'white',
                 padding: 10,
                 borderRadius: 100,
                 marginLeft: 10,

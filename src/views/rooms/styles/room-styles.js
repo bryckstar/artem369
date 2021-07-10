@@ -25,6 +25,6 @@ export const RoomStyles = StyleSheet.create({
     height: '100%',
     width: '100%',
     justifyContent: 'space-between',
-    padding:15
+    padding: 15,
   },
 });

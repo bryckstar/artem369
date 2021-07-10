@@ -11,9 +11,9 @@ export const RoomCard = ({index, total, navigation}) => {
         navigation.navigate('Room', {id: index, total: total});
       }}>
       <View style={styles.container}>
-        <Text style={{color: 'white', marginBottom: '5%', fontWeight: 'bold'}}>
+        {/* <Text style={{color: 'white', marginBottom: '5%', fontWeight: 'bold'}}>
           Habitacion {index}
-        </Text>
+        </Text> */}
         {index === 1 ? <Icon name="lock-open" /> : <Icon name="lock" />}
       </View>
     </TouchableOpacity>
@@ -22,11 +22,11 @@ export const RoomCard = ({index, total, navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#45B39C',
+    width: 200,
     margin: 7,
     display: 'flex',
     flexDirection: 'column',
-    padding: 35,
+    padding: 25,
     borderRadius: 10,
   },
 });
