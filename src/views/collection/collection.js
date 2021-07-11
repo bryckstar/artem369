@@ -36,12 +36,12 @@ function Obras({navigation}) {
           flexDirection: 'row',
           padding: 10,
         }}>
-        <View style={{width: '20%', marginTop: '5%'}}>
+        <View style={{width: '20%', marginTop: '10%', marginRight: '3%'}}>
           <AutoHeightImage
             style={{borderColor: '#B8874A', borderWidth: 5}}
-            width={130}
+            width={150}
             source={{
-              uri: 'http://1.bp.blogspot.com/-Kp7XMrH7Rw0/T2DdbG9IYAI/AAAAAAAAA-k/G_AKPT4jxmA/s1600/314px-David_von_Michelangelo.jpg',
+              uri: 'https://mdl.artvee.com/sftb/225239fg.jpg',
             }}
           />
         </View>
@@ -52,7 +52,7 @@ function Obras({navigation}) {
             flexWrap: 'wrap',
             marginLeft: '1%',
           }}>
-          <View style={{width: '40%', marginTop: '5%'}}>
+          <View style={{width: '40%', marginTop: '10%'}}>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('IndCol');
@@ -61,35 +61,35 @@ function Obras({navigation}) {
                 width={200}
                 style={{borderColor: '#B8874A', borderWidth: 5}}
                 source={{
-                  uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
+                  uri: 'https://mdl.artvee.com/sftb/517354ld.jpg',
                 }}
               />
             </TouchableOpacity>
           </View>
-          <View style={{width: '40%', marginTop: '5%'}}>
+          <View style={{width: '40%', marginTop: '10%'}}>
             <AutoHeightImage
               style={{borderColor: '#B8874A', borderWidth: 5}}
               width={200}
               source={{
-                uri: 'https://3.bp.blogspot.com/-n1aZFQN3_OU/WEcVxxHlgOI/AAAAAAAACF4/z_1qV-Qvq90IZpmf9iYiT_Z2bywX70DTACLcB/w1200-h630-p-k-no-nu/387970_3000.jpg',
+                uri: 'https://mdl.artvee.com/sftb/511984ld.jpg',
               }}
             />
           </View>
-          <View style={{width: '40%', marginTop: '5%'}}>
+          <View style={{width: '40%', marginTop: '2%'}}>
             <AutoHeightImage
               style={{borderColor: '#B8874A', borderWidth: 5}}
               width={200}
               source={{
-                uri: 'https://www.lavanguardia.com/files/image_948_465/files/fp/uploads/2019/08/06/5f15f06fb5e9a.r_d.516-211.jpeg',
+                uri: 'https://mdl.artvee.com/sftb/202443fg.jpg',
               }}
             />
           </View>
-          <View style={{width: '40%', marginTop: '5%'}}>
+          <View style={{width: '40%', marginTop: '2%'}}>
             <AutoHeightImage
               width={200}
               style={{borderColor: '#B8874A', borderWidth: 5}}
               source={{
-                uri: 'https://i0.wp.com/plumasatomicas.com/wp-content/uploads/2020/04/Ultima-Cena-Jueves-Santo-Cuadro-Da-Vinci.jpg?resize=1200%2C720&ssl=1',
+                uri: 'https://mdl.artvee.com/sftb/501153ld.jpg',
               }}
             />
           </View>

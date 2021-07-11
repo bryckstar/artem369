@@ -21,7 +21,7 @@ export const MapStyles = StyleSheet.create({
     height: '100%',
     position: 'absolute',
     zIndex: -1,
-    backgroundColor: '#9B7042',
+    backgroundColor: '#f3dec3',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',

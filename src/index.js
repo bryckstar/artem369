@@ -30,11 +30,7 @@ const App = () => (
         component={IndividualCollection}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="Profile"
-        component={Profile}
-        options={{headerShown: false}}
-      />
+      <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="Configuration" component={Profile} />
       <Stack.Screen
         name="Quiz"

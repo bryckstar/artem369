@@ -58,19 +58,19 @@ export const Quiz = ({navigation}) => {
           }}>
           <View style={{width: '40%', marginTop: '5%'}}>
             <AutoHeightImage
-              width={225}
+              width={235}
               style={{borderColor: '#B8874A', borderWidth: 5}}
               source={{
-                uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
+                uri: 'https://mdl.artvee.com/sftb/202443fg.jpg',
               }}
             />
           </View>
           <View style={{width: '40%', marginTop: '5%'}}>
             <AutoHeightImage
               style={{borderColor: '#B8874A', borderWidth: 5}}
-              width={233}
+              width={225}
               source={{
-                uri: 'https://3.bp.blogspot.com/-n1aZFQN3_OU/WEcVxxHlgOI/AAAAAAAACF4/z_1qV-Qvq90IZpmf9iYiT_Z2bywX70DTACLcB/w1200-h630-p-k-no-nu/387970_3000.jpg',
+                uri: 'https://mdl.artvee.com/sftb/501153ld.jpg',
               }}
             />
           </View>
