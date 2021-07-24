@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Modal,
   Text,
@@ -16,13 +16,13 @@ import Background from '../../assets/maps/mapa_2.svg';
 import MapL1 from '../../assets/maps/mapL1.svg';
 import MapL2 from '../../assets/maps/mapL2.svg';
 import Desc from '../../assets/maps/description.svg';
-import {MapStyles} from './styles/map-styles';
-import {Avatar, Icon} from 'react-native-elements';
-export const Map = ({navigation}) => {
+import { MapStyles } from './styles/map-styles';
+import { Avatar, Icon } from 'react-native-elements';
+export const Map = ({ navigation }) => {
   const [museumName, setMuseumName] = useState('Museo Name');
   const [modalVisible, setModalVisible] = useState(false);
   return (
-    <View style={{height: '100%'}}>
+    <View style={{ height: '100%' }}>
       <Modal
         visible={modalVisible}
         animationType="slide"
@@ -77,26 +77,26 @@ export const Map = ({navigation}) => {
           justifyContent: 'space-between',
           width: '100%',
         }}>
-        <View style={{padding: 10}}>
+        <View style={{ padding: 10, zIndex:10 }}>
           <Text
             style={{
-              zIndex: 1,
+              zIndex: 20,
               paddingTop: 15,
               paddingLeft: 30,
               color: '#2596be',
             }}>
             {museumName}
           </Text>
-          <View style={{position: 'absolute', padding: 10}}>
+          <View style={{ position: 'absolute', padding: 10 }}>
             <TouchableOpacity
               onPress={() => {
                 setModalVisible(true);
               }}>
-              <MuseumTitle />
+              <MuseumTitle  />
             </TouchableOpacity>
           </View>
         </View>
-        <View style={{padding: 20}}>
+        <View style={{ padding: 20, zIndex:10 }}>
           <Avatar
             onPress={() => {
               navigation.navigate('Profile');
@@ -110,6 +110,7 @@ export const Map = ({navigation}) => {
         </View>
       </View>
 
+      <Image resizeMode='stretch' style={{ width: '100%', position:'absolute' , height: '100%', zIndex: 0 }} source={require('../../assets/maps/mapa_2.png')} />
       <View style={MapStyles.backgroudImage}>
         <Icon
           name="chevron-left"
@@ -134,11 +135,11 @@ export const Map = ({navigation}) => {
               }}
             />
           </TouchableOpacity>
-          <View style={{alignSelf: 'flex-start'}}>
+          <View style={{ alignSelf: 'flex-start' }}>
             <MapL2 />
           </View>
           <MapL1 />
-          <View style={{alignSelf: 'flex-start'}}>
+          <View style={{ alignSelf: 'flex-start' }}>
             <MapL2 />
           </View>
         </View>
@@ -150,14 +151,14 @@ export const Map = ({navigation}) => {
         />
       </View>
 
-      <View style={{...MapStyles.confIconsWrapper, zIndex: 9}}>
-        <View style={{flexDirection: 'row'}}>
+      <View style={{ ...MapStyles.confIconsWrapper, zIndex: 9 }}>
+        <View style={{ flexDirection: 'row' }}>
           <Image
             source={require('../../assets/images/missions2.jpeg')} //'../../assets/images/missions.jpeg'}}
-            style={{width: 200, height: 30, marginTop: 25}}
+            style={{ width: 200, height: 30, marginTop: 25 }}
           />
         </View>
-        <View style={{flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row' }}>
           <TouchableOpacity
             onPress={() => {
               navigation.navigate('Collection');
@@ -168,8 +169,8 @@ export const Map = ({navigation}) => {
                 borderRadius: 100,
               }}>
               <Image
-                source={{uri: 'https://i.imgur.com/HhSgYFs.png'}}
-                style={{width: 40, height: 40}}
+                source={{ uri: 'https://i.imgur.com/HhSgYFs.png' }}
+                style={{ width: 40, height: 40 }}
               />
             </View>
           </TouchableOpacity>
@@ -184,8 +185,8 @@ export const Map = ({navigation}) => {
                 marginLeft: 10,
               }}>
               <Image
-                source={{uri: 'https://i.imgur.com/4lZmHNg.png'}}
-                style={{width: 40, height: 40}}
+                source={{ uri: 'https://i.imgur.com/4lZmHNg.png' }}
+                style={{ width: 40, height: 40 }}
               />
             </View>
           </TouchableOpacity>
