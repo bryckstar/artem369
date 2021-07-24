@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {SafeAreaView, View, Image, ImageBackground} from 'react-native';
-import {useContext} from 'react';
 import {LoginStyles} from './styles';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {useForm, Controller} from 'react-hook-form';
