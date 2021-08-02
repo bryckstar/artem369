@@ -36,12 +36,12 @@ function Obras({navigation}) {
           flexDirection: 'row',
           padding: 10,
         }}>
-        <View style={{width: '20%', marginTop: '10%', marginRight: '3%'}}>
+        <View style={{width: '22%', marginTop: '10%', marginRight: '5%'}}>
           <AutoHeightImage
             style={{borderColor: '#B8874A', borderWidth: 5}}
-            width={150}
+            width={180}
             source={{
-              uri: 'https://mdl.artvee.com/sftb/225239fg.jpg',
+              uri: 'https://mdl.artvee.com/sftb/227387fg.jpg',
             }}
           />
         </View>
@@ -61,17 +61,17 @@ function Obras({navigation}) {
                 width={200}
                 style={{borderColor: '#B8874A', borderWidth: 5}}
                 source={{
-                  uri: 'https://mdl.artvee.com/sftb/517354ld.jpg',
+                  uri: 'https://i.imgur.com/ExZB3yk.png',
                 }}
               />
             </TouchableOpacity>
           </View>
-          <View style={{width: '40%', marginTop: '10%'}}>
+          <View style={{width: '20%', marginTop: '10%'}}>
             <AutoHeightImage
               style={{borderColor: '#B8874A', borderWidth: 5}}
-              width={200}
+              width={210}
               source={{
-                uri: 'https://mdl.artvee.com/sftb/511984ld.jpg',
+                uri: 'https://i.imgur.com/rSZmP1L.png',
               }}
             />
           </View>
@@ -80,16 +80,16 @@ function Obras({navigation}) {
               style={{borderColor: '#B8874A', borderWidth: 5}}
               width={200}
               source={{
-                uri: 'https://mdl.artvee.com/sftb/202443fg.jpg',
+                uri: 'https://i.imgur.com/550aYWi.png',
               }}
             />
           </View>
-          <View style={{width: '40%', marginTop: '2%'}}>
+          <View style={{width: '20%', marginTop: '2%'}}>
             <AutoHeightImage
-              width={200}
+              width={220}
               style={{borderColor: '#B8874A', borderWidth: 5}}
               source={{
-                uri: 'https://mdl.artvee.com/sftb/501153ld.jpg',
+                uri: 'https://i.imgur.com/8eMllHF.png',
               }}
             />
           </View>

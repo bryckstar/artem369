@@ -6,7 +6,7 @@ import {CountdownCircleTimer} from 'react-native-countdown-circle-timer';
 import {TouchableOpacity} from 'react-native';
 import AutoHeightImage from 'react-native-auto-height-image';
 
-export const Quiz = ({navigation}) => {
+export const Quiz2 = ({navigation}) => {
   return (
     <View style={QuizStyles.backgroudImage}>
       <View style={QuizStyles.topUtils}>
@@ -58,19 +58,19 @@ export const Quiz = ({navigation}) => {
           }}>
           <View style={{width: '40%'}}>
             <AutoHeightImage
-              width={150}
+              width={250}
               style={{borderColor: '#B8874A', borderWidth: 5}}
               source={{
-                uri: 'https://mdl.artvee.com/sftb/227387fg.jpg',
+                uri: 'https://i.imgur.com/E4aYgw0.png',
               }}
             />
           </View>
           <View style={{width: '40%'}}>
             <AutoHeightImage
               style={{borderColor: '#B8874A', borderWidth: 5}}
-              width={150}
+              width={160}
               source={{
-                uri: 'https://mdl.artvee.com/sftb/211066fg.jpg',
+                uri: 'https://i.imgur.com/xynVjBk.png',
               }}
             />
           </View>

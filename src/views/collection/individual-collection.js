@@ -29,7 +29,7 @@ export const IndividualCollection = ({navigation}) => {
               borderWidth: 5,
             }}
             source={{
-              uri: 'https://i.pinimg.com/originals/9f/cd/74/9fcd74d337576218aacb3849f84fa356.jpg',
+              uri: 'https://i.imgur.com/ExZB3yk.png',
             }}
           />
         </View>
@@ -41,15 +41,17 @@ export const IndividualCollection = ({navigation}) => {
         </View>
       </View>
       <View style={styles.information}>
-        <Text style={styles.title}>La Noche estrellada</Text>
-        <Text style={styles.subtittle}>Vincent Van Gogh, 1890</Text>
+        <Text style={styles.title}>La Anunciación</Text>
+        <Text style={styles.subtittle}>Fra Angélico, 1425-1426</Text>
         <Text style={styles.infoText}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+          La Anunciación es un retablo realizado por el pintor toscano del
+          Renacimiento Fra Angélico, sobrenombre de Guido di Pietro da Mugello
+          (1400- 1455). Está realizado en oro y temple sobre tabla, y (según las
+          últimas investigaciones) fue pintado hacia 1425-1426 (antes se databa
+          hacia 1430- 1432). Consta de una escena principal, con el tema de la
+          Anunciación a la Virgen María, y de una predela o banco con cinco
+          pequeñas escenas más. El conjunto mide 194 cm de ancho y 194 cm de
+          alto.1 Se exhibe actualmente en el Museo del Prado de Madrid.
         </Text>
         <View
           style={{
@@ -81,7 +83,7 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingRight: 310,
   },
-  infoText: {textAlign: 'justify'},
+  infoText: {textAlign: 'justify', marginRight: 50},
   title: {fontSize: 20, marginTop: 5},
   subtittle: {fontSize: 15, marginTop: 5, marginBottom: 7},
   button: {
